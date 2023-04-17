@@ -1,0 +1,152 @@
+.Game{
+    background-color: rgb(166, 214, 166);
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+    width: 300px; 
+    height: 300px; 
+    margin: auto;
+    margin-bottom: 2%;
+  }
+  
+  .square {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .square:hover {
+    background-color: #eee;
+  }
+  
+  .game-board button {
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .game-board button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .game-board .status {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f44336;
+  }
+  
+  .game-board .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .game-boardd .square:focus {
+    outline: none;
+  }
+  
+  .game-board .square:hover {
+    background-color: gray;
+  }
+  
+  .game-board .square.X {
+    color: #f44336;
+  }
+  
+  .game-board .square.O {
+    color: #2196f3;
+  }
+
+  .human{
+    color: white;
+    border: #333;
+  }
+
+  .computer{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: bolder;
+    border: #333;
+  }
+  
+  .reset-button{
+    border: #2196f3;
+    color: #eee;
+    background-color: rgb(236, 36, 36);
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+    padding: 1% 1% 1% 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+  }
+
+  .reset-button:hover{
+    background-color: gray;
+  }
+  .game-mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .human-box,
+  .computer-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: black;
+  }
+  
+  .human-box label,
+  .computer-box label {
+    display: block;
+    text-align: center;
+  }
+
+  .status-box{
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 45%;
+    background-color: black;
+    display: block;
+    text-align: center;
+    
+  }
+
+
+  .status{
+    color: white;
+  }
+  .human-box:hover,
+  .computer-box:hover{
+    background-color: gray;
+  }
+
+
+  
+  
